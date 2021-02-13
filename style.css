@@ -1,0 +1,29 @@
+.wrapper {
+	display: grid;
+	background-color: blue;
+	grid-template-columns: repeat(5, 2fr);
+	grid-auto-rows: minmax(100px, auto);
+	grid-column-gap: 10px;
+	grid-row-gap: 1em;
+	padding: 5px;
+}
+
+.box {
+	background-color: chartreuse;
+	border-radius: 3px 0;
+}
+
+.box20 {
+	background-color: darkgreen;
+	grid-column-start: 5;
+	grid-row-start: 4;
+	grid-row-end: 6;
+}
+
+.box21 {
+	background-color: darkgreen;
+	grid-row-start: 5;
+	grid-column-start: 1;
+
+	grid-column-end: 3;
+}
